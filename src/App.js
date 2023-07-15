@@ -9,20 +9,25 @@ function App() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    if(text === '') return
+    if (text === "") return;
     setTasks((prevState) => [...prevState, text]);
+    setText("");
   }
 
   return (
     <div className="App">
       <div className="form-section">
         <form onSubmit={handleSubmit}>
-          <input onChange={(e) => setText(e.target.value)} type="text" />
-          <button>Submit</button>
+          <input
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+            type="text"
+          />
+          <button className="button-submit">Submit</button>
         </form>
       </div>
 
-      <div>
+      <div className="tasklist-section">
         <TaskList tasks={tasks} />
       </div>
     </div>

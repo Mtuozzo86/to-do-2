@@ -40,7 +40,25 @@ input {
   margin: 6px;
 }
 
-button {
+.button-submit {
   font-family: "poppins";
-  padding: 10px 40px;
+  padding: 4px 40px;
+}
+
+.tasklist-section {
+  margin: 40px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  border-bottom: 1px solid #a8eb12;
+  width: 25%;
+}
+
+.delete-button {
+  background-color: #a8eb12;
+  padding: 8px 12px;
 }
