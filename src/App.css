@@ -1,14 +1,16 @@
 .App {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right top,
     #0066ff,
     #00a1ff,
     #00c6eb,
     #00e087,
     #a8eb12
-  );
-  height: 100vh;
+  ); */
+  /* height: 100vh; */
   font-family: "poppins";
+  display: flex;
+  flex-direction: column;
 }
 
 .form-section {
@@ -31,7 +33,7 @@ form {
   background: white;
 }
 
-input {
+.task-input {
   border-radius: 8px;
   height: 40px;
   width: 80%;
@@ -55,10 +57,31 @@ input {
   align-items: center;
   margin: 20px;
   border-bottom: 1px solid #a8eb12;
-  width: 25%;
+  width: 75%;
 }
 
 .delete-button {
   background-color: #a8eb12;
   padding: 8px 12px;
+}
+
+.task p {
+  flex: 1;
+  cursor: pointer;
+}
+
+.task-details {
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #a8eb12;
+  padding: 10px 40px;
+}
+
+.search-input {
+  border-radius: 8px;
+  height: 40px;
+  width: 50%;
+  padding: 10px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
 }
