@@ -3,7 +3,6 @@ import { useState } from "react";
 export default function Task({ text, id, onDelete }) {
   const [showDetails, setShowDetails] = useState(false);
 
-  console.log(showDetails);
 
   return (
     <>
