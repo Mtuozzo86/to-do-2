@@ -14,7 +14,7 @@ export default function Task({ text, id, onDelete }) {
       </div>
       {showDetails && (
         <div className="task-details">
-          <p>details</p>
+          <input className="details-textarea" type="textarea"/>
         </div>
       )}
     </>

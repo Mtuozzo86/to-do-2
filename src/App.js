@@ -11,9 +11,6 @@ function App() {
   // if nothing is being filtered, everything in tasks will be displayed.  Use this variable to display the main tasks
   const filtered = tasks.filter((task) => task.text.includes(searched));
 
-  function handleSearch(e) {
-    setSearched(e);
-  }
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -36,7 +33,7 @@ function App() {
       <h2>Amount of Tasks: {tasks.length}</h2>
       <input
         value={searched}
-        onChange={(e) => handleSearch(e.target.value)}
+        onChange={(e) => setSearched(e.target.value)}
         className="search-input"
         placeholder="Search Tasks"
       />

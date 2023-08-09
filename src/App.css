@@ -85,3 +85,13 @@ form {
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin: 0 auto;
 }
+
+.details-textarea, 
+.details-textarea:focus {
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+}
